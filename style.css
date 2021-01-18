@@ -12,17 +12,17 @@ body {
 	background-color: #ffffff;
 	position: relative;
 	color: #000000;
+	font-family: sans-serif;
 }
 
 img {
 	border-radius: 50%;
 	max-width: 80px;
 	height: auto;
+	margin-top: 20px;
 }
 
 
-@supports (-webkit-filter: blur(5px) saturate(160%) contrast(45%) brightness(140%)) or
-  (filter: blur(5px) saturate(160%) contrast(45%) brightness(140%)) {
 
 	.field {
 		width: 50%;
@@ -31,17 +31,17 @@ img {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		border-radius: 20px;	
+		border-radius: 20px;
+		text-align: center;
 
 		background-color: rgba(255,255,255, 0.2);
 			
-		filter: blur(5px) saturate(160%) contrast(45%) brightness(140%);
-    	-webkit-filter: blur(5px) saturate(160%) contrast(45%) brightness(140%);
-	    	
+		backdrop-filter: blur(20px);
+	    -webkit-backdrop-filter: blur(20px);
 			
 	}
 
-}
+
 
 @media screen and (max-width: 992px) {
 	.field {
